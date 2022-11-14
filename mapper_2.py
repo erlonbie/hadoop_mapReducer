@@ -7,6 +7,7 @@ rgx = re.compile(r'[A-Za-z]+')
 
 for line in sys.stdin:
     line = line.strip()
+    line=line.lower()
     words = line.split()
     for word in words:
         if rgx.match(word) is not None:
