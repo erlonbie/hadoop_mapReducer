@@ -5,6 +5,7 @@ wordMap = {}
 
 for line in sys.stdin:
     line = line.strip()
+    line=line.lower()
     words = line.split()
     for word in words:
         if wordMap.get(word) is not None:
